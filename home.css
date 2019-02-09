@@ -53,4 +53,5 @@ hr{
 
 .carousel-caption{
   margin-bottom: 200px;
+  visibility:hidden;
 }
