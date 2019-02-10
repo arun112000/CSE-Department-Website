@@ -6,16 +6,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
+    <link rel="stylesheet" href="demo.js">
 </head>
 
 <body>
+<nav class="navbar navbar-expand-sm navbar-custom sticky-top">
+        <a class="navbar-brand"href="#"><img height=100px src="logo.png"></a>
+        <ul class="navbar-nav ml-auto" id="nav_list">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item sub-menu-parent" tab-index="0">
+            <a href="#" class="nav-link">People</a>
+            <ul class="sub-menu" type="none">
+                <li><a href="#" class="d-item">Faculty</a></li>
+                <li><a class="d-item" href="#">Staff</a></li>
+                <li><a href="#" class="d-item">ExFaculty</a></li>
+                <li><a href="#" class="d-item">Students</a></li>
+            </ul></li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+            </li>
+        </ul>
+        </nav>
 <div class="content">
 </div>
     <footer id="myFooter">
-        <div class="container">
-            <div class="row">
+        <div class="fluid-container" style="max-width:1500px;">
+            <div class="row" >
                 <div class="col-sm-3">
                     <img src="logofooter.png" alt="" width="200px" height="220px">
                 </div>

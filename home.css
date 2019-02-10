@@ -126,6 +126,7 @@ hr{
 #back2Top:hover {
   background-color: #DDF;
   color: #000;
+  border-radius: 10px;
 }
 
 #banner{
