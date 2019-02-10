@@ -4,7 +4,7 @@ $(window).scroll(function(){
         $('.navbar-custom').css('background', 'transparent');
         $('.navbar-brand').css('display', '');
         $('#nav_list').removeClass('mx-auto').addClass('ml-auto');
-      
+        $('.navbar-custom').css('box-shadow', '0 0 0 0 #e8e8e8');
     }   
   else{
         $('.navbar-custom').css('background', '#ffffff');
