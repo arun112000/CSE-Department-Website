@@ -17,9 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from faculty import views
+import home.views
+import base.views
+import gallery.views
+import faculty.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
+    path('',home.views.home,name='home'),
+    path('base/',base.views.base,name='base'),
+    path('faculty/',faculty.views.faculty,name='faculty'),
+    path('gallery/',gallery.views.gallery,name='gallery'),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
