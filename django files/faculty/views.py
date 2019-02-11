@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Faculty
 # Create your views here.
-def home(request):
+def faculty(request):
     fcb=Faculty.objects
-    return render(request,'dss.html',{"fcb":fcb})
+    return render(request,'people.html',{"fcb":fcb})
