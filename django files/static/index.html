@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+  <script src="{% static 'jquery.min.js' %}"></script>
+  <script src="{% static 'popper.min.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+  <script src="{% static 'home.js' %}"></script>
+</head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
+      <a class="navbar-brand"href="#">Logo</a>
+      <ul class="navbar-nav ml-auto" id="nav_list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner" style="max-height:650px;">
+        <div class="carousel-item active img-wrapper" >
+          <img src="{% static '1.jpg' %}" alt="Los Angeles" style="display:inline;">
+          <div class="img-overlay">
+            <h1 style="color: #ffffff;margin:20px 30px;">Studying science from a new angle.</h1>
+            <p class="mx-auto" style="color:#ffffff; width:50%;font-size: 20px;">At Concord High School, you will have amazing opportunities to explore modern science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+              <button class="btn btn-md btn-warning">Button</button>
+           </div>
+        </div>
+        <div class="carousel-item img-wrapper">
+          <img src="{% static '2.jpg' %}" alt="Chicago">
+          <div class="img-overlay">
+              <h1 style="color: #ffffff;margin:20px 30px;">Studying science from a new angle.</h1>
+              <p class="mx-auto" style="color:#ffffff; width:50%;font-size: 20px;">At Concord High School, you will have amazing opportunities to explore modern science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+                <button class="btn btn-md btn-warning">Button</button>
+             </div>
+        </div>
+        <div class="carousel-item img-wrapper">
+          <img src="{% static '3.jpg' %}" alt="New York">
+          <div class="img-overlay">
+              <h1 style="color: #ffffff;margin:20px 30px;">Studying science from a new angle.</h1>
+              <p class="mx-auto" style="color:#ffffff; width:50%;font-size: 20px;">At Concord High School, you will have amazing opportunities to explore modern science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+                <button class="btn btn-md btn-warning">Button</button>
+             </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+
+    <!--advantages-->
+    <div class="info">
+      <h1><b>Advantages</b></h1>
+      <hr>
+      <p class="info-text mx-auto">
+          Concord High School was founded on the principle that by pursuing big ideas and sharing what we learn, we make the world a better place. For more than 135 years, we haven’t strayed from that vision.
+      </p>
+      <div class="card-group">
+          <div class="card bg-primary">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the first card</p>
+              <span class="icon fa-road"></span>
+            </div>
+          </div>
+          <div class="card bg-warning">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the second card</p>
+            </div>
+          </div>
+          <div class="card bg-success">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the third card</p>
+            </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the fourth card</p>
+            </div>
+          </div> 
+        </div>
+    </div>
+
+    <!--events-->
+    <div class="info">
+        <h1><b>Events</b></h1>
+        <hr>
+        <p class="info-text mx-auto">
+            Concord High School was founded on the principle that by pursuing big ideas and sharing what we learn, we make the world a better place. For more than 135 years, we haven’t strayed from that vision.
+        </p>
+        <div class="card-group">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+                <span class="icon fa-road"></span>
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the second card</p>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the third card</p>
+              </div>
+            </div>
+            <div class="card bg-danger">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the fourth card</p>
+              </div>
+            </div> 
+          </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+          <div class="row">
+              <div class="col-md-4"><img src="logo.png" height=100px style="margin-left:100px;"></div>
+              <div class="col-md-8" style="text-align: center;">© 2019 All Rights Reserved Terms of Use and Privacy Policy</div>
+            </div>
+      </footer>
+  </body>
+</html>
