@@ -12,11 +12,11 @@
 }
 
 #myFooter .row {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 #myFooter .navbar-brand {
-    margin-top: 45px;
+    margin-top:0px;
     height: 65px;
 }
 
@@ -129,3 +129,54 @@ body{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
 }
+
+.navbar-custom{
+    transition: background-color 0.5s;
+    position: fixed;
+    width:100%;
+    height:100px;
+  }
+  .nav-link{
+    color:#000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:17px;
+    font-weight:800;
+  }
+  .nav-link:hover{
+    color: #f8a427;
+    text-decoration: underline;
+  }
+  .sub-menu-parent { position: relative; }
+  
+  .sub-menu { 
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    margin-top: 12px;
+    left: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    background-color: #7f0909;
+    width:150px;
+  }
+  
+  .sub-menu-parent:focus .sub-menu,
+  .sub-menu-parent:focus-within .sub-menu,
+  .sub-menu-parent:hover .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  .d-item{
+    line-height: 50px;
+    font-size: 14px;
+    font-family: open sans,Helvetica,Arial,sans-serif;
+    color: rgba(255,255,255,.75);
+  }
+  .d-item:hover{
+    color:#ffffff;
+  }
