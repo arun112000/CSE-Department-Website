@@ -3,6 +3,7 @@ $(window).scroll(function(){
    if(scroll < 30){
         $('.navbar-custom').css('background', 'transparent');
         $('.navbar-brand').css('display', '');
+        $('.navbar-custom').css('height', '');
         $('#nav_list').removeClass('mx-auto').addClass('ml-auto');
         $('.navbar-custom').css('box-shadow', '0 0 0 0 #e8e8e8');
     }   

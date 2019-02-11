@@ -1,0 +1,176 @@
+#myFooter {
+    background-color: #f8f8f8;
+    color: black;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #7f0909;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 0px;
+}
+
+#myFooter .navbar-brand {
+    margin-top:0px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background-color: pi
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color:black;
+}
+
+#myFooter a {
+    color: #1b1a1a;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: black;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #7f0909;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+
+
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.navbar-custom{
+    background-color: #ffffff;
+    width:100%;
+    height:100px;
+  }
+  .nav-link{
+    color:#000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:17px;
+    font-weight:800;
+  }
+  .nav-link:hover{
+    color: #f8a427;
+    text-decoration: underline;
+  }
+  .sub-menu-parent { position: relative; }
+  
+  .sub-menu { 
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    margin-top: 12px;
+    left: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    background-color: #7f0909;
+    width:150px;
+  }
+  
+  .sub-menu-parent:focus .sub-menu,
+  .sub-menu-parent:focus-within .sub-menu,
+  .sub-menu-parent:hover .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  .d-item{
+    line-height: 50px;
+    font-size: 14px;
+    font-family: open sans,Helvetica,Arial,sans-serif;
+    color: rgba(255,255,255,.75);
+  }
+  .d-item:hover{
+    color:#ffffff;
+  }

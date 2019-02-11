@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'exfaculty.apps.ExfacultyConfig',
     'staff.apps.StaffConfig',
     'faculty.apps.FacultyConfig',
+    'base.apps.BaseConfig',
+    'gallery.apps.GalleryConfig',
     'UG_firstyear.apps.UgFirstyearConfig',
     'UG_secondyear.apps.UgSecondyearConfig',
     'UG_thirdyear.apps.UgThirdyearConfig',
@@ -130,7 +132,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'home/templates')
+    os.path.join(BASE_DIR, 'home/templates'),
+    os.path.join(BASE_DIR, 'base/templates'),
 ]
 
 MEDIA_URL='/media/'
