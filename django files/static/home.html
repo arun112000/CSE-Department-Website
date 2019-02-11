@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+  <script src="{% static 'jquery.min.js' %}"></script>
+  <script src="{% static 'popper.min.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300i,300,400i,600,700%7CPT+Serif:400,400i,700,700i">
+  <script src="{% static 'home.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+  <link rel="stylesheet" href="{% static 'animate.css' %}">
+  <link rel="icon" href="{% static 'logo.png' %}" type="image/x-icon">
+</head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
+      <a class="navbar-brand"href="#"><img height=100px src="{% static 'logo.png' %}"></a>
+      <ul class="navbar-nav ml-auto" id="nav_list">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item sub-menu-parent" tab-index="0">
+          <a href="#" class="nav-link">People</a>
+          <ul class="sub-menu" type="none">
+            <li><a href="#" class="d-item">Faculty</a></li>
+            <li><a class="d-item" href="#">Staff</a></li>
+            <li><a href="#" class="d-item">ExFaculty</a></li>
+            <li><a href="#" class="d-item">Students</a></li>
+          </ul></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide caption-animate" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static '1.jpg' %}" alt="Los Angeles" width="100%" height="700" >
+          <div class="carousel-caption mx-auto" style="visibility:visible;">
+            <h1 class="animated fadeInUp"><b>Studying Computer science from a new angle.</b></h1>
+            <p style="font-size:25px;font-weight:200;" class="animated fadeInUp">At NIT Jamshedpur, you will have amazing opportunities to explore modern computer science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="{% static '3.jpg' %}" alt="Chicago" width="100%" height="700">
+          <div class="carousel-caption ">
+            <h1 class="animated fadeInUp"><b>Studying Computer science from a new angle.</b></h1>
+            <p style="font-size:25px;font-weight:200;" class="animated fadeInUp">At NIT Jamshedpur, you will have amazing opportunities to explore modern computer science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+          </div>  
+        </div>
+        <div class="carousel-item">
+          <img src="{% static '2.jpg' %}" alt="New York" width="100%" height="700">
+          <div class="carousel-caption ">
+            <h1 class="animated fadeInUp"><b>Studying Computer science from a new angle.</b></h1>
+            <p style="font-size:25px;font-weight:200;" class="animated fadeInUp">At NIT Jamshedpur, you will have amazing opportunities to explore modern computer science through studying it in the friendly and professional environment using modern equipment and resources.</p>
+          </div>   
+        </div>
+      </div>
+      
+    </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+    
+
+    <!--advantages-->
+    <div class="info">
+      <h1><b>Advantages </b></h1><div class="unit-left"><span class="icon icon-madison fa fa-flash"></span></div></span>
+      <hr>
+      <p class="info-text mx-auto">
+          Concord High School was founded on the principle that by pursuing big ideas and sharing what we learn, we make the world a better place. For more than 135 years, we haven’t strayed from that vision.
+      </p>
+     <img class="mx-auto" src="{% static 'advantages.png' %}" width=1300px>  
+      <div class="row mx-auto" style="margin-left:800px;" >
+        <div class="col-md-2"></div>
+        <div class="col-md-2" style="padding-left: 24px;">evev</div>
+        <div class="col-md-2" style="padding-left: 55px;">evfv</div>
+        <div class="col-md-2"  style="padding-left: 80px;">dvdfv</div>
+        <div class="col-md-2"  style="padding-left: 120px;">sdf</div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div id="banner">
+      <p class="mx-auto" id="banner-text">We work hard to prepare every student 
+        for the adult life.</p>
+    </div>
+
+    <!--events-->
+    <div class="info">
+        <h1><b>Events</b></h1>
+        <hr>
+        <p class="info-text mx-auto">
+            Concord High School was founded on the principle that by pursuing big ideas and sharing what we learn, we make the world a better place. For more than 135 years, we haven’t strayed from that vision.
+        </p>
+        <div class="card-group">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+                <span class="icon fa-road"></span>
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the second card</p>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the third card</p>
+              </div>
+            </div>
+            <div class="card bg-danger">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the fourth card</p>
+              </div>
+            </div> 
+          </div>
+      </div>
+
+      <!-- scroll to top -->
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+
+      <!-- footer -->
+  
+  </body>
+</html>
