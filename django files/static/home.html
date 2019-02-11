@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% extends "base.html" %}
   {% load staticfiles %}
-  <title>Bootstrap Example</title>
+  {% block head %}
+  <title>CSE Department NIT Jamshedpur</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
@@ -14,28 +16,11 @@
   <link rel="stylesheet" href="{% static 'home.css' %}">
   <link rel="stylesheet" href="{% static 'animate.css' %}">
   <link rel="icon" href="{% static 'logo.png' %}" type="image/x-icon">
+  {% endblock %}
 </head>
   <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
-      <a class="navbar-brand"href="#"><img height=100px src="{% static 'logo.png' %}"></a>
-      <ul class="navbar-nav ml-auto" id="nav_list">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item sub-menu-parent" tab-index="0">
-          <a href="#" class="nav-link">People</a>
-          <ul class="sub-menu" type="none">
-            <li><a href="#" class="d-item">Faculty</a></li>
-            <li><a class="d-item" href="#">Staff</a></li>
-            <li><a href="#" class="d-item">ExFaculty</a></li>
-            <li><a href="#" class="d-item">Students</a></li>
-          </ul></li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-      </ul>
-    </nav>
+      {% block content %}
+    
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide caption-animate" data-ride="carousel">
@@ -137,11 +122,10 @@
           </div>
       </div>
 
-      <!-- scroll to top -->
-      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+      
+<!-- scroll to top -->
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
-
-      <!-- footer -->
-  
+      {% endblock %}
   </body>
 </html>
