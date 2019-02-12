@@ -1,5 +1,6 @@
 from django.db import models
 
+var1="pid"
 class Faculty(models.Model):
     Name= models.CharField(max_length=30,blank=True,null=True)
     Image=models.ImageField(blank=True,null=True,upload_to='images/')
@@ -15,3 +16,6 @@ class Faculty(models.Model):
 
     def __str__(self):
         return self.Name
+
+    def pid(self):
+        return var1+str(self.id)

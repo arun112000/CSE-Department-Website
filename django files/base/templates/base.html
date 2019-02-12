@@ -16,17 +16,19 @@
         <link rel="stylesheet" href="{% static 'animate.css' %}">
         <link rel="icon" href="{% static 'logo.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+        <script src="{% static 'base.js' %}"></script>
     {% block head %}
         
         {% endblock %}
-        <link rel="stylesheet" href="{% static 'base.js' %}">
+        
+
 </head>
 
 <body>
-    <!-- scroll to top -->
-<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    
 <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
-        <a class="navbar-brand"href="#"><img height=100px src="{% static 'logo.png' %}"></a>
+        <a class="navbar-brand"href="#"><img height=100px src="{% static 'logofooter.png' %}"></a>
         <ul class="navbar-nav ml-auto" id="nav_list">
             <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
@@ -34,7 +36,7 @@
             <li class="nav-item sub-menu-parent" tab-index="0">
             <a href="#" class="nav-link">People</a>
             <ul class="sub-menu" type="none">
-                <li><a href="#" class="d-item">Faculty</a></li>
+                <li><a href="{% url 'faculty' %}" class="d-item">Faculty</a></li>
                 <li><a class="d-item" href="#">Staff</a></li>
                 <li><a href="#" class="d-item">ExFaculty</a></li>
                 <li><a href="#" class="d-item">Students</a></li>

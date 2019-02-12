@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Faculty</title>
-    {% endblock %}        
+    <script src="{% static 'people.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'people.css' %}">
+        {% endblock %}        
 
 </head>
 
 <body>
         {% block content %}
+        <!-- scroll to top -->
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
     <div class="container">
             {% for person in fcb.all %}
             {% if forloop.first %}
@@ -25,11 +29,11 @@
                                 name="aboutme" width="140" height="140" class="img-circle"></a>
                         
                                 <h3>{{ person.Name }}</h3>
-                                <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><div class="btn btn-primary">View Profile</div></a>
+                                <a href="#aboutModal" data-toggle="modal" data-target="#{{ person.pid }}"><div class="btn btn-primary">View Profile</div></a>
                     </center>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                <div class="modal fade" id="{{ person.pid }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
